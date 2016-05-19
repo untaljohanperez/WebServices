@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Servicios.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="css/GeneralStyle.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title><asp:ContentPlaceHolder ID="tittleContent" runat="server">
+                    </asp:ContentPlaceHolder></title>
+    <script src="scripts/jquery-2.2.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+    </style>
+                    <asp:ContentPlaceHolder ID="headContent" runat="server">
+                    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <img src="Img/logo_unac.png" alt="water-mark" class="water-mark" />
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" />
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <div style="font-family: monospace; color: #888; font-size: 50px; text-align: center; padding: 1em;">
+                    <asp:ContentPlaceHolder ID="innerUpdatePanel" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+                    <asp:ContentPlaceHolder ID="outerUpdatePanel" runat="server">
+                    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

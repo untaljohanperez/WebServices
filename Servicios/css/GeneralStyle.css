@@ -1,0 +1,21 @@
+﻿body { 
+    background-color: #f0f0f0;
+    background-image: url("../Img/body.png");
+    background-attachment: scroll;  
+    background-repeat: repeat;
+    background-position: center;
+
+}
+.water-mark {
+    filter: blur(0.31em);
+    -webkit-filter: blur(0.31em);
+    position: fixed;
+    right: 0;
+    width: 40%;
+    z-index: 50;
+    opacity: 0.1;
+    visibility: visible;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
